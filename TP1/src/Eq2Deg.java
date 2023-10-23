@@ -63,12 +63,18 @@ public class Eq2Deg {
 		if (this.im_x1 > 0) {
 			show_x1 = this.re_x1 + " + " + this.im_x1 + " i";
 		}
+		else if (this.im_x1 == 0){
+			show_x1 = String.valueOf(this.re_x1);
+		}
 		else {
 			show_x1 = this.re_x1 + " " + this.im_x1 + " i";
 		}
 		
 		if (this.im_x2 > 0) {
 			show_x2 = this.re_x2 + " + " + this.im_x2 + " i";
+		}
+		else if (this.im_x2 == 0){
+			show_x2 = String.valueOf(this.re_x2);
 		}
 		else {
 			show_x2 = this.re_x2 + " " + this.im_x2 + " i";
