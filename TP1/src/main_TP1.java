@@ -1,4 +1,3 @@
-import java.io.*;
 
 import javax.swing.JOptionPane;
 
@@ -15,14 +14,18 @@ public class main_TP1 {
 		Eq2Deg test = new Eq2Deg();
 		
 		try {
-			test.solution(a, b, c);}
+			test.solution(a, b, c);
+			
+		    }
 		catch(ArithmeticException e) {
 			System.out.println("Division par zéro !");
 			System.exit(0);
 		}
 		
-		double[] res = test.get_racines();
+		
 		test.show();
+	    Frame aff = new Frame();
+		
 	}
 
 }
