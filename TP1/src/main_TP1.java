@@ -25,7 +25,7 @@ public class main_TP1 {
 		
 		test.show();
 	    Frame aff = new Frame();
-		
+		System.out.println("test");
 	}
 
 }
